@@ -17,6 +17,11 @@ namespace MapasDeKarnaugh
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Método para accionar el boton de simplificar funciones.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSimplificar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textVariables.Text))//Por mientras. (Aqui va lo que nos entrega la gramatica (Llista)).
