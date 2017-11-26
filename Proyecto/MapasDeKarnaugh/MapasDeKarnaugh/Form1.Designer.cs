@@ -33,10 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSimplificar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataKarnaugh = new System.Windows.Forms.DataGridView();
             this.groupMapa = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataKarnaugh)).BeginInit();
             this.groupMapa.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,18 +88,19 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "label2";
             // 
-            // dataGridView1
+            // dataKarnaugh
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(405, 208);
-            this.dataGridView1.TabIndex = 5;
+            this.dataKarnaugh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataKarnaugh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataKarnaugh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataKarnaugh.Location = new System.Drawing.Point(3, 16);
+            this.dataKarnaugh.Name = "dataKarnaugh";
+            this.dataKarnaugh.Size = new System.Drawing.Size(405, 208);
+            this.dataKarnaugh.TabIndex = 5;
             // 
             // groupMapa
             // 
-            this.groupMapa.Controls.Add(this.dataGridView1);
+            this.groupMapa.Controls.Add(this.dataKarnaugh);
             this.groupMapa.Location = new System.Drawing.Point(297, 12);
             this.groupMapa.Name = "groupMapa";
             this.groupMapa.Size = new System.Drawing.Size(411, 227);
@@ -118,9 +119,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mapa de Karnaugh.";
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataKarnaugh)).EndInit();
             this.groupMapa.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -134,7 +136,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSimplificar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataKarnaugh;
         private System.Windows.Forms.GroupBox groupMapa;
     }
 }

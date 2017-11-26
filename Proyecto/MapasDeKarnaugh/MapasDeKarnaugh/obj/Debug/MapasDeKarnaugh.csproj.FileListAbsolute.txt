@@ -1,0 +1,9 @@
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\bin\Debug\MapasDeKarnaugh.exe.config
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\bin\Debug\MapasDeKarnaugh.exe
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\bin\Debug\MapasDeKarnaugh.pdb
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\obj\Debug\MapasDeKarnaugh.csprojResolveAssemblyReference.cache
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\obj\Debug\MapasDeKarnaugh.Principal.resources
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\obj\Debug\MapasDeKarnaugh.Properties.Resources.resources
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\obj\Debug\MapasDeKarnaugh.csproj.GenerateResource.Cache
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\obj\Debug\MapasDeKarnaugh.exe
+D:\Escuela\semestre 11\Compiladores B\Proyecto\Proyecto\MapasDeKarnaugh\MapasDeKarnaugh\obj\Debug\MapasDeKarnaugh.pdb

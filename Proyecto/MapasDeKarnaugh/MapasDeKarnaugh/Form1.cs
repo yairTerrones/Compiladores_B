@@ -12,9 +12,20 @@ namespace MapasDeKarnaugh
 {
     public partial class Principal : Form
     {
+        private List<string> ls;
+        private Mapa mapaKarnaugh;
+        private List<char> l_Aux;
+        private int cantidadLetras;
+
+        /// <summary>
+        /// El metodo getCantidadLetras se inicia primero
+        /// Las producciones 3 y 4 crean el objeto tipo Mapa (solo una vez) y de parametro se le pasaran 
+        /// la cantidad de letras y la lista de letras.
+        /// </summary>
         public Principal()
         {
             InitializeComponent();
+            cantidadLetras = this.getCantidadLetras("ABCD");
         }
 
         /// <summary>
@@ -24,7 +35,17 @@ namespace MapasDeKarnaugh
         /// <param name="e"></param>
         private void btnSimplificar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textVariables.Text))//Por mientras. (Aqui va lo que nos entrega la gramatica (Llista)).
+            try
+            {
+                if (string.IsNullOrEmpty(textVariables.Text) && l_Aux != null)//Por mientras. (Aqui va lo que nos entrega la gramatica (Lista)).
+                {
+                    mapaKarnaugh = new Mapa(cantidadLetras,l_Aux);
+                    mapaKarnaugh.inicializaDataGridview(dataKarnaugh);
+                    if (mapaKarnaugh.ubicaTermino("A!B!C"))
+                        MessageBox.Show("Termino ubicado correctamente");
+                }
+            }
+            catch (Exception)
             {
 
             }
@@ -35,22 +56,19 @@ namespace MapasDeKarnaugh
         /// </summary>
         /// <param name="l_Variables">Lista generada en el esquema de traducción.</param>
         /// <returns></returns>
-        public int getCantidadLetras(List<string> l_Variables)
+        public int getCantidadLetras(string unaPalabra)
         {
-            List<char> l_Aux = new List<char>();
+            l_Aux = new List<char>();
 
             try
             {
-                foreach (string str in l_Variables)
+                for (int i = 0; i < unaPalabra.Length; i++)
                 {
-                    for (int i = 0; i < str.Length; i++)
-                    {
-                        if (!l_Aux.Contains(str[i]))
-                            l_Aux.Add(str[i]);
+                    if (!l_Aux.Contains(unaPalabra[i]) && unaPalabra[i] != '!')
+                        l_Aux.Add(unaPalabra[i]);
 
-                        if (l_Aux.Count > 4)//Modificar para el proyecto
-                            return -1;
-                    }
+                    if (l_Aux.Count > 4)//Modificar para el proyecto
+                        return -1;
                 }
             }
             catch (Exception ex)
@@ -59,7 +77,6 @@ namespace MapasDeKarnaugh
             }
             return l_Aux.Count;
         }
-
 
     }
 }
